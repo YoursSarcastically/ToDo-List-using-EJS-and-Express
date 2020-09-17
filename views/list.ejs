@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        <div class="container box">
+      <h1 class="display-1"> <%= dayhtml %></h1>
+      <ul class="list-group list-group-flush">
+   
+     
+
+   <% for(var i=0;i<newitem.length;i++){ %>
+       <li class="lead "> <%=newitem[i] %> </li>
+  <% } %>
+   
+   
+
+      
+     <form action="/" method="POST">
+        <input class="" name="newItem" type="text">
+        <button class="btn btn-outline-info" type="submit">Add!</button>
+        </ul>
+    </div>
+
+    <footer> Made with ❤️ by Suraj</footer>
+        <script src="" async defer></script>
+    </body>
+
+   
+</html>
