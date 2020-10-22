@@ -1,5 +1,5 @@
 const express=require("express");
-const bodyParser=require("body-parser");
+const bodyParser=require("body-parser");//body parser for getting input from the page
 const { render } = require("ejs");
 const app=express();
 
@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 
 var item="";
 
-var itemarray=["Wake up! ☀️","Be awesome 😎 ","Sleep 😴"];
+var itemarray=["Wake up! ☀️","Be amazing😎 ","Sleep 😴"];
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -25,7 +25,7 @@ var day= today.toLocaleDateString("en-US",options)
 
 res.render("list",
 {
-    dayhtml: day,newitem: itemarray});
+    dayhtml: day,newitem: itemarray}); //pushing new item into an array
 
 });
 
